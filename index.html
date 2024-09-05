@@ -7,7 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    .content {
+    /* .content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 600px;
+        text-align: center;
+ 	    background: rgb(46, 45, 43); 
+ 	    padding: 5px;
+    }
+    .backdo{
+        background-image: url(backg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .mains {
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+	opacity: 0.6;
+ 	background: rgb(253, 255, 155); 
+ 	padding: 5px;
+    } */
+    /* .mains2 {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    height: auto;
+ 	background: rgb(170, 171, 110);
+ 	padding: 5px; 
+    }
+    .cardcontend {
+        display: flex;
+    }
+    .generalcont{
+        margin-left: 130px;
+        margin-top: 30px; 
+        border: 7px solid rgb(120, 116, 116);
+        width: 300px;
+        text-decoration: none;
+    }
+    .p1w{
+        font-size: 20px;
+    } */
+    @media (min-width: 680px) {  
+        .content {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
@@ -50,9 +95,51 @@
     }
     .p1w{
         font-size: 20px;
+    }   
+    .linker {
+        display: none;
     }
+    body{
+size: 100%;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+    }
+    @media (max-width:679px) {
+        .linker{
+            z-index: 1;
+            background-color: rgb(255, 255, 255);
+            width: 393px;
+            height: 100vh;
+            min-height: auto;
+            position: relative;
+
+        }
+        .backdo{
+            z-index: 0;
+            height: 100vh;
+        }
+        .content{
+            z-index: 0;
+            display: none;
+        }
+        .linkh{
+            z-index: 2;
+            margin-left: auto;
+            margin-right: auto;            
+            text-align: center;
+        }
+    }
+
+
 </style>
-<body class="backdo">
+<body class="backdo">  
+    <div class="linker"><div class="linkh"><h1>не то устройство для просмотра</h1>
+    <button><a href="https://littledaizymob.github.io/">перейти на мобильную версию</a></button></div></div>
     <div class="content">
         <div class="mains">
             <p class="p1w">My Fandoms</p>
@@ -72,5 +159,6 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
